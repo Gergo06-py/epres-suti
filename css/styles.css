@@ -133,7 +133,7 @@ main p {
     animation: hide 1s forwards;
 }
 
-/* Animation */
+/* Animations */
 
 @keyframes hide {
     100% {
