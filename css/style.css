@@ -100,7 +100,6 @@ main {
 }
 
 #accept:checked ~ #cookie-accept {
-    background-color: #f00;
     animation: hide 1s forwards;
 }
 
