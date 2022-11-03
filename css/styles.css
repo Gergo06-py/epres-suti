@@ -63,6 +63,7 @@ nav a {
 #masodik {
     background-color: #a00c;
     position: absolute;
+    left: 10px;
     top: 100%;
     opacity: 0;
     width: 200px;
