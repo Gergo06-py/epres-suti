@@ -73,6 +73,10 @@ main {
     background-color: #fff;
 }
 
+main * {
+    padding-bottom: 10px;
+}
+
 #cookie-accept {
     position: fixed;
     bottom: 0;
