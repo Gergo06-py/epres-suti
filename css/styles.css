@@ -50,6 +50,11 @@ nav > ul > li {
     cursor: pointer;
 }
 
+nav > ul > li:hover {
+    text-decoration: underline solid #fff;
+    text-underline-offset: 5px;
+}
+
 nav a {
     color: white;
     text-decoration: none;
