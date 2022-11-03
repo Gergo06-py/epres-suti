@@ -14,7 +14,16 @@
             <nav>
                 <ul>
                     <li><a href="#elso">Első</a></li>
-                    <li><a href="#masodik">Második</a></li>
+                    <li>
+                        <a href="#masodik">
+                            Második
+                            <ul id="dropdown">
+                                    <li>Első</li>
+                                    <li>Második</li>
+                                    <li>Harmadik</li>
+                            </ul>
+                        </a>
+                    </li>
                     <li><a href="#harmadik">Harmadik</a></li>
                     <li><a href="#negyedik">Negyedik</a></li>
                 </ul>
@@ -33,7 +42,11 @@
         </main>
 
         <div id="cookie-accept">
-            Cookie szabályzat <button>Elfogadom</button>
+            Cookie szabályzat
+            <label for="accept">
+                <span id="btn">Elfogadom</span>
+            </label>
+            <input type="checkbox" name="accept" id="accept">
         </div>
     </div>
 </body>

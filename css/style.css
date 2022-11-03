@@ -25,7 +25,7 @@ header {
 
 header nav {
     background-color: #c00a;
-    height: 30px;
+    height: 50px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -39,16 +39,34 @@ ul {
 }
 
 ul li {
+    position: relative;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
+    cursor: pointer;
+}
+
+#dropdown {
+    display: block;
+    text-align: left;
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+    background-color: #a00c;
+    color: #fff;
+    text-shadow: #000 0 0 5px;
+    height: fit-content;
+}
+
+li:nth-of-type(2):hover #dropdown {
+    opacity: 1;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-}
-
-li:hover {
-
 }
 
 main {
@@ -61,16 +79,36 @@ main {
     left: 0;
     background-color: #000e;
     color: #fff;
-    padding: 10px;
+    padding: 15px 10px;
     text-align: center;
     width: 100%;
 }
 
-#cookie-accept button {
+#btn {
     background-color: yellow;
     color: #000;
     border: none;
     border-radius: 5px;
     padding: 2px 5px;
     margin-left: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#accept {
+    display: none;
+}
+
+#accept:checked ~ #cookie-accept {
+    background-color: #f00;
+    animation: hide 1s forwards;
+}
+
+/* Animation */
+
+@keyframes hide {
+    100% {
+        opacity: 0;
+        transition: opacity;
+    }
 }
